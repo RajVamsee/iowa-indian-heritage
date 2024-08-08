@@ -1,19 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import './CustomNavbar.css';
 
 const CustomNavbar = () => (
-  <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
-    <Navbar.Brand href="/">Indian Heritage</Navbar.Brand>
+  <Navbar style={{ padding: '0 20px' }} bg="dark" variant="dark" expand="lg">
+    <Navbar.Brand href="/" style={{ marginLeft: '20px' }}>Iowa Indian Heritage</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
-        <LinkContainer to="/">
-          <Nav.Link>Home</Nav.Link>
-        </LinkContainer>
-        <LinkContainer to="/about">
-          <Nav.Link>About</Nav.Link>
-        </LinkContainer>
+        <Nav.Link as={Link} to="/">Home</Nav.Link>
+        <Nav.Link as={Link} to="/about">About</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
