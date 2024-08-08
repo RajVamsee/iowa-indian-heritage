@@ -1,0 +1,17 @@
+/* style.css */
+body {
+    padding-top: 56px; /* Adjust to the height of your navbar */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  .nav-link {
+    margin-left: 15px;
+  }
+  
+  .navbar {
+    background-color: #343a40 !important;
+  }
+  
