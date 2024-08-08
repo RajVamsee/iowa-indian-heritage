@@ -78,3 +78,41 @@ body {
 h1, h2, h3, p {
   margin: 10px 0;
 }
+
+/* Contact page styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-form, .contact-details {
+  width: 45%;
+}
+
+.contact-form h2, .contact-details h2 {
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form button {
+  margin: 5px 0;
+  padding: 7px;
+  font-size: 1rem;
+}
+
+/* New styles for the image */
+.contact-details img {
+  width: 65%; /* Ensures the image takes the full width of the container */
+  margin-bottom: 10px; /* Adds some space between the image and the address details */
+}

@@ -16,6 +16,14 @@
   margin-left: auto;
 }
 
+.nav-link:hover, .nav-link:focus {
+  color: #FFD700 !important; /* Change to gold on hover or focus */
+}
+
+.nav-link.active {
+  color: #FFA500 !important; /* Change to orange when active */
+}
+
 .navbar-brand, .nav-link {
   color: #fff !important;
 }
