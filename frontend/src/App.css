@@ -1,5 +1,5 @@
 body {
-  background-color: #F4A460; /* Sandalwood color */
+  background-color: hsl(41, 73%, 65%); /* Sandalwood color */
   color: #333; /* Default text color */
   margin: 0;
   padding: 0;
@@ -54,4 +54,27 @@ body {
   min-height: 80vh; /* Adjust as necessary */
   padding-top: 20px; /* Spacing from the navbar */
   text-align: center;
+}
+
+.temple-image {
+  max-width: 35%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.temple-details {
+  margin-top: 20px;
+  font-size: 1.2em;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 20px;
+  text-align: left;
+}
+
+h1, h2, h3, p {
+  margin: 10px 0;
 }

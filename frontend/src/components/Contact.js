@@ -1,0 +1,10 @@
+import React from 'react';
+import '../App.css';
+
+const Contact = () => (
+  <div className="center-content">
+    
+  </div>
+);
+
+export default Contact;
