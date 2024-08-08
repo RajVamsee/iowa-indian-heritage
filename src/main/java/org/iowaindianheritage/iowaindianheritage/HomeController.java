@@ -1,13 +1,13 @@
 package org.iowaindianheritage.iowaindianheritage;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class HomeController {
 
-    @GetMapping("/")
-    public String home() {
-        return "Welcome to the Indian Heritage & Cultural Center of Eastern Iowa!";
+    @RequestMapping(value = "/{path:[^\\.]*}")
+    public String redirect() {
+        return "forward:/index.html";
     }
 }
